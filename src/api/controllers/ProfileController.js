@@ -10,7 +10,7 @@ async function getAllProfiles() {
 
 async function getProfileByName(name) {
     try {
-        return await ProfileModel.find({"name": name});
+        return await ProfileModel.findOne({"name": name});
     } catch (err) {
         throw err;
     }
