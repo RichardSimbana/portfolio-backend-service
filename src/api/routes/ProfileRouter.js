@@ -7,7 +7,6 @@ const corsOptions = {
     origin: '*'
 }
 
-
 router.get('/api/profiles', cors(corsOptions), async (req, res) => {
     try {
         const profiles = await profileController.getAllProfiles();
